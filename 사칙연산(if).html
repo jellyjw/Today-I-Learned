@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    A : <input type="number" id="a" /><br /><br />
+    B : <input type="number" id="b" /><br /><br />
+    <button onclick="calc('plus')">더하기</button>
+    <button onclick="calc('minus')">빼기</button>
+    <button onclick="calc('multi')">곱하기</button>
+    <button onclick="calc('divide')">나누기</button>
+    <br /><br />
+    결과는 = <span id="result"></span><br />
+    <script>
+        function calc(oper) {
+
+            const a = document.getElementById("a");
+            const b = document.getElementById("b");
+
+            const result = document.getElementById("result");
+
+            console.log(result);
+
+            if (oper === 'plus') {
+                result.innerText = Number(a.value) + Number(b.value);
+            } else if (oper === 'minus') {
+                result.innerText = Number(a.value) - Number(b.value);
+            } else if (oper === 'multi') {
+                result.innerText = Number(a.value) * Number(b.value);
+            } else if (oper === 'divide') {
+                result.innerText = Number(a.value) / Number(b.value);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
