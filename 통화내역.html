@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function handleAddClick() {
+            const numberInputValue = document.getElementById("phone-number").value;
+            const numberList = document.getElementById("phone-number-list");
+            const item = `<li>${numberInputValue}</li>`
+
+            console.log('지우')
+
+            numberList.innerHTML += item
+        }
+
+    </script>
+    <h1>통화내역</h1>
+    <input id="phone-number" /> <input type="button" value="추가" onclick="handleAddClick()" />
+    <ul id="phone-number-list">
+        <li>010-9237-9408</li>
+    </ul>
+
+</body>
+
+</html>
