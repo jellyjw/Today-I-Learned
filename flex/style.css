@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    /* display : inline-flex */
+
+    flex-direction: column;
+    /* 아이템들이 열(세로)방향으로 배치 */
+
+    /* flex-direction: column-reverse;
+    세로-역순으로 세로 배치(아래부터 정렬)
+
+    flex-direction: row;
+    가로-행(가로)방향으로 배치(왼쪽 정렬)
+
+    flex-direction: row-reverse;
+    가로-역순으로 가로 배치(오른쪽 정렬)
+    */
+
+    flex-wrap: nowrap;
+    /* 줄바꿈을 하지 않고, 넘치면 그냥 빠져 나감 */
+
+    /* flex-wrap:wrap;
+        줄바꿈을 함.
+    
+       flex-wrap:wrap-reverse
+       줄바꿈을 하는데 아이템을 역순으로 배치.*/
+
+}
+
+/* .container {
+    flex-flow: row wrap;
+    /* flex-direction : row
+      flex-wrap : wrap
+    이 두줄을 줄여 쓴 것. } */
+
+
+.container {
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+}
+
+.container {
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-itemsnbcv: center;
+    /* align-items: baseline; */
+
+}
