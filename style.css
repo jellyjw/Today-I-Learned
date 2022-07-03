@@ -1,0 +1,201 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ @font-face {
+     font-family: 'NotoSansKR';
+     src: url(./NotoSansKR-Medium.otf);
+ }
+
+ @font-face {
+     font-family: 'notoSansKRbold';
+     src: url(./NotoSansKR-Bold.otf);
+ }
+
+ body {
+     background-color: #F1E9E3;
+     font-family: 'NotoSansKR';
+ }
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+ }
+
+ /* 메인 로고 */
+ img {
+     width: 77.5px;
+     height: 91px;
+     margin-top: 96.5px;
+     margin-bottom: 80.5px;
+ }
+
+ /* 로그인, 비회원 버튼 박스 */
+ .login-btn-box {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .user-login-btn,
+ .not-user-login-btn {
+     width: 306px;
+     height: 84.9px;
+     text-align: center;
+     font-size: 22px;
+ }
+
+ /* 로그인 버튼 */
+ .user-login-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 9px solid #f24e1e;
+     border-bottom: none;
+     border-radius: 9px 9px 0px 0px;
+ }
+
+ /* 비회원 버튼 */
+ .not-user-login-btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #E3E3E3;
+     border-bottom: 9px solid #f24e1e;
+     color: #7C7C7C;
+ }
+
+ /* 로그인 박스(id, pw 입력창) */
+ .login-box {
+     width: 612px;
+     height: 331.1px;
+     border: 9px solid #f24e1e;
+     border-top: none;
+     border-radius: 0px 0px 9px 9px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ /* id, pw 입력 창 아이콘 */
+ .id-icon-img {
+     width: 25px;
+     height: 25px;
+     margin: 0px 0px 0px 14px;
+ }
+
+ .pw-icon-img {
+     width: 35px;
+     height: 35px;
+     margin: 0px 0px 0px 9px;
+ }
+
+
+ /* id, pw 입력 박스 */
+ .user-id-box,
+ .user-pw-box {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     background: #FFFFFF;
+     border: 1px solid #FF7626;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     width: 510px;
+     height: 60px;
+     margin-left: 44px;
+     margin-right: 43px;
+ }
+
+ .user-id-box {
+     margin-top: 63.1px;
+     border-radius: 9px 9px 0px 0px;
+ }
+
+ .user-pw-box {
+     margin-bottom: 52px;
+     border-radius: 0px 0px 9px 9px;
+ }
+
+ /* id, pw 입력창 */
+ .user-id,
+ .user-pw {
+     font-size: 16px;
+     width: 448px;
+     height: 50px;
+     margin-left: 10px;
+     background: #FFFFFF;
+     border: none;
+ }
+
+ .user-pw {
+     margin-left: 5px;
+ }
+
+ /* 로그인 submit 버튼 */
+ .login-btn {
+     border: none;
+     width: 510px;
+     height: 53px;
+     left: 698px;
+     top: 588px;
+     font-size: 18px;
+     color: white;
+     background: #FF7626;
+     border-radius: 6px;
+     margin-bottom: 43px;
+     margin-left: 44px;
+     margin-right: 43px;
+     font-family: 'notoSansKRbold';
+ }
+
+ /* 아이디찾기, 비밀번호찾기, 회원가입 메뉴 */
+ .login-menu {
+     margin-top: 38px;
+     color: #6B6B6B;
+ }
+
+ .find-id,
+ .find-pw,
+ .join {
+     display: inline-block;
+     width: 140px;
+     height: 19px;
+     text-align: center;
+ }
+
+ .find-id,
+ .find-pw,
+ .terms-of-service,
+ .privacy-policy {
+     border-right: 1px solid #D9D9D9;
+ }
+
+ /* 이용약관, 개인정보처리방침, 문의하기 */
+ .footer-menu {
+     margin-top: 111px;
+     display: flex;
+     justify-content: center;
+     color: #6B6B6B;
+     margin-bottom: 10px;
+ }
+
+
+ .terms-of-service,
+ .inquiry {
+
+     width: 59px;
+     height: 15px;
+     text-align: center;
+     font-size: 12px;
+ }
+
+ .privacy-policy {
+     width: 103px;
+     height: 15px;
+     text-align: center;
+     font-size: 12px;
+ }
+
+ .copyright {
+     color: #6B6B6B;
+     font-size: 12px;
+ }
