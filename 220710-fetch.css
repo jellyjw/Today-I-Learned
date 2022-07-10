@@ -1,0 +1,9 @@
+body {
+  background-color: beige;
+  margin: 20px 20px 20px 20px;
+}
+
+li {
+  color: red;
+  font-size: 20px;
+}
