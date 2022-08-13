@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "DungGeunMo", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  width: 360px;
+  height: 640px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  border: solid 2px white;
+  background: linear-gradient(
+    to bottom,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    navy,
+    purple
+  );
+}
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+article > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#result_level_1,
+#result_level_2,
+#result_level_3,
+#result_level_4 {
+  /* font-size: 40px; */
+  color: white;
+}
+
+.container > div.result-box {
+  display: none;
+}
+
+.result {
+  color: white;
+  font-size: 15px;
+  padding: 0px 0px 15px 0px;
+}
+
+.kakao-share-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.result-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.test-retry {
+  border: 2px solid antiquewhite;
+  background-color: antiquewhite;
+  margin-left: 20px;
+  width: 160px;
+}
