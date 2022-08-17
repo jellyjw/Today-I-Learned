@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#not-user-tab-btn").style.backgroundColor =
       "#e3e3e3";
     document.querySelector("#user-tab-btn").style.backgroundColor = "#ffffff";
+    document.querySelector(".login-form").style.backgroundColor = "#ffffff";
   });
 
   notUserTabBtn.addEventListener("click", () => {
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#none-member").style.display = "flex";
     document.querySelector("#user-tab-btn").style.backgroundColor = "#e3e3e3";
     document.querySelector("#not-user-tab-btn").style.backgroundColor =
-      "#ffffff";
+      "#f8f1e6";
+    document.querySelector(".login-form").style.backgroundColor = "#f8f1e6";
   });
 });
