@@ -1,201 +1,448 @@
- * {
-     box-sizing: border-box;
- }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
- @font-face {
-     font-family: 'NotoSansKR';
-     src: url(./NotoSansKR-Medium.otf);
- }
+* {
+  box-sizing: border-box;
+}
 
- @font-face {
-     font-family: 'notoSansKRbold';
-     src: url(./NotoSansKR-Bold.otf);
- }
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
 
- body {
-     background-color: #F1E9E3;
-     font-family: 'NotoSansKR';
- }
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* height: 100vh; */
+  /* justify-content: center; */
+}
 
- .container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     height: 100vh;
- }
+.main-menu {
+  display: flex;
+  justify-content: center;
+}
 
- /* 메인 로고 */
- img {
-     width: 77.5px;
-     height: 91px;
-     margin-top: 96.5px;
-     margin-bottom: 80.5px;
- }
+.top-menu {
+  padding: 0px 62px 0px 82px;
+  background-color: #ffd5bd;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
- /* 로그인, 비회원 버튼 박스 */
- .login-btn-box {
-     display: flex;
-     flex-direction: row;
- }
+.main-logo {
+  width: 50px;
+  height: 37.5px;
+  /* margin: 16.38px 0px 13px 60px; */
+}
 
- .user-login-btn,
- .not-user-login-btn {
-     width: 306px;
-     height: 84.9px;
-     text-align: center;
-     font-size: 22px;
- }
+.sign-up {
+  font-size: 20px;
+  font-weight: 700px;
+  color: #777777;
+}
 
- /* 로그인 버튼 */
- .user-login-btn {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border: 9px solid #f24e1e;
-     border-bottom: none;
-     border-radius: 9px 9px 0px 0px;
- }
+.reservation {
+  color: #f24e1e;
+  font-size: 20px;
+  font-weight: 700;
+}
 
- /* 비회원 버튼 */
- .not-user-login-btn {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: #E3E3E3;
-     border-bottom: 9px solid #f24e1e;
-     color: #7C7C7C;
- }
+.user-profile-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
 
- /* 로그인 박스(id, pw 입력창) */
- .login-box {
-     width: 612px;
-     height: 331.1px;
-     border: 9px solid #f24e1e;
-     border-top: none;
-     border-radius: 0px 0px 9px 9px;
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
+.user-name {
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 140px;
+  vertical-align: middle;
+  /* margin-left: 20px; */
+  margin-bottom: 21px;
+}
 
- /* id, pw 입력 창 아이콘 */
- .id-icon-img {
-     width: 25px;
-     height: 25px;
-     margin: 0px 0px 0px 14px;
- }
+.user-profile {
+  display: flex;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
 
- .pw-icon-img {
-     width: 35px;
-     height: 35px;
-     margin: 0px 0px 0px 9px;
- }
+.date_of_birth {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444444;
+  margin-bottom: 56px;
+}
 
+.res-info {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 120px;
+  margin-bottom: 21px;
+  position: relative;
+  z-index: -1;
+}
 
- /* id, pw 입력 박스 */
- .user-id-box,
- .user-pw-box {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     background: #FFFFFF;
-     border: 1px solid #FF7626;
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-     width: 510px;
-     height: 60px;
-     margin-left: 44px;
-     margin-right: 43px;
- }
+.res-info-background {
+  position: absolute;
+  z-index: -2;
+  top: -22px;
+  left: -30px;
+}
 
- .user-id-box {
-     margin-top: 63.1px;
-     border-radius: 9px 9px 0px 0px;
- }
+.res-box {
+  position: relative;
+  display: flex;
+  background-color: #fffbf5;
+  height: 480px;
+  width: 1055px;
+  border-radius: 13px;
+  border: 2px solid #ff7626;
+  margin-top: 21px;
+  margin-bottom: 150px;
+  /* flex-direction: column; */
+}
 
- .user-pw-box {
-     margin-bottom: 52px;
-     border-radius: 0px 0px 9px 9px;
- }
+.shop-img {
+  width: 216px;
+  height: 210px;
+  margin-top: 51px;
+  margin-left: 78px;
+  margin-bottom: 219px;
+}
 
- /* id, pw 입력창 */
- .user-id,
- .user-pw {
-     font-size: 16px;
-     width: 448px;
-     height: 50px;
-     margin-left: 10px;
-     background: #FFFFFF;
-     border: none;
- }
+.shop-img2 {
+  width: 216px;
+  height: 169px;
+  /* margin-top: 46px; */
+  margin-left: 55px;
+}
 
- .user-pw {
-     margin-left: 5px;
- }
+.information {
+  margin-left: 40px;
+  margin-top: 44px;
+}
 
- /* 로그인 submit 버튼 */
- .login-btn {
-     border: none;
-     width: 510px;
-     height: 53px;
-     left: 698px;
-     top: 588px;
-     font-size: 18px;
-     color: white;
-     background: #FF7626;
-     border-radius: 6px;
-     margin-bottom: 43px;
-     margin-left: 44px;
-     margin-right: 43px;
-     font-family: 'notoSansKRbold';
- }
+.phone-number {
+  border-bottom: 1px solid #959595;
+  border-top: 1px solid #959595;
+}
 
- /* 아이디찾기, 비밀번호찾기, 회원가입 메뉴 */
- .login-menu {
-     margin-top: 38px;
-     color: #6B6B6B;
- }
+.phone-number1 {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
 
- .find-id,
- .find-pw,
- .join {
-     display: inline-block;
-     width: 140px;
-     height: 19px;
-     text-align: center;
- }
+.phone-number2 {
+  border-top: 1px solid #959595;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
 
- .find-id,
- .find-pw,
- .terms-of-service,
- .privacy-policy {
-     border-right: 1px solid #D9D9D9;
- }
+.left-side-bar,
+.right-side-bar {
+  display: flex;
+  flex-direction: column;
+}
 
- /* 이용약관, 개인정보처리방침, 문의하기 */
- .footer-menu {
-     margin-top: 111px;
-     display: flex;
-     justify-content: center;
-     color: #6B6B6B;
-     margin-bottom: 10px;
- }
+.res-group {
+  display: flex;
+  flex-direction: column;
+}
 
+.left-side-bar {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 80px;
+  margin-right: 40px;
+  margin-left: 75px;
+}
 
- .terms-of-service,
- .inquiry {
+.right-side-bar {
+  margin-top: 0px;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+}
 
-     width: 59px;
-     height: 15px;
-     text-align: center;
-     font-size: 12px;
- }
+.shop-name {
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 
- .privacy-policy {
-     width: 103px;
-     height: 15px;
-     text-align: center;
-     font-size: 12px;
- }
+.res-list {
+  font-size: 23px;
+  font-weight: 600;
+}
 
- .copyright {
-     color: #6B6B6B;
-     font-size: 12px;
- }
+.res-name,
+.res-phone-number,
+.res-personnel {
+  margin-bottom: 17px;
+}
+
+.res-btn {
+  position: absolute;
+  bottom: 55px;
+  right: 50px;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.res-change {
+  color: #f87c34;
+  padding-right: 23px;
+  border-right: solid 1px #828282;
+}
+
+.res-delete {
+  padding-left: 23px;
+}
+
+/* 예약일시  */
+.res-day {
+  position: absolute;
+  right: 40px;
+  top: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #828282;
+}
+
+.icon {
+  margin-right: 26px;
+  width: 20px;
+  display: inline-block;
+}
+
+.chat_bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 1550px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  /* margin-top: 300px; */
+}
+
+.chat_bot_background {
+  position: relative;
+  width: 87px;
+  height: 87px;
+  align-items: center;
+}
+
+.chat_bot_icon {
+  position: absolute;
+  align-items: center;
+}
+
+.res-list span {
+  font-weight: 400;
+  padding-left: 30px;
+}
+
+.reservation a {
+  padding: 60px;
+  color: #444444;
+  cursor: pointer;
+}
+
+a.res-info_btn {
+  color: #f24e1e;
+}
+
+.right-side-bar2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
+.list1,
+.list2,
+.list3 {
+  display: flex;
+  width: 1055px;
+  height: 200px;
+  margin-left: 67px;
+  padding-bottom: 73px;
+  padding-top: 35px;
+  cursor: pointer;
+}
+
+/* .list1,
+.list2 {
+  border-bottom: 1px solid #959595;
+} */
+
+.shop {
+  margin-right: 161px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.res-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+.people {
+  margin-right: 237px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.res-menu-history {
+  margin-right: 68px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.res-box-visit-history {
+  display: flex;
+  background-color: #fffbf5;
+  height: 480px;
+  width: 1055px;
+  border-radius: 13px;
+  border: 2px solid #ff7626;
+  margin-top: 21px;
+  margin-bottom: 150px;
+  flex-direction: column;
+}
+
+.border-line-img {
+  width: 998px;
+  margin-left: 30px;
+  margin-right: 27px;
+}
+
+footer {
+  width: 100vw;
+  height: 137px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+footer span {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-top,
+.footer-right-top {
+  padding-bottom: 10px;
+}
+
+header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 34px;
+  margin-right: 348px;
+  display: inline-block;
+}
+
+.review-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.star {
+  display: inline-block;
+  margin: 16px 618px 25.6px 34px;
+  width: 150px;
+}
+
+.review {
+  display: flex;
+  margin-left: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.review-btn {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* margin-bottom: 31px; */
+  margin-left: 536px;
+  margin-right: 59px;
+}
+
+.change {
+  color: #f87c34;
+  padding-right: 20px;
+  border-right: #444444 solid 1px;
+}
+
+.delete {
+  padding-left: 20px;
+}
+
+.border-line {
+  width: 979px;
+  margin-top: 36px;
+  position: absolute;
+  right: 36px;
+}
+
+.rev1 {
+  display: flex;
+  height: 250px;
+  margin-top: 60px;
+}
+
+.rev2 {
+  display: flex;
+  height: 250px;
+}
+
+.res-box-review {
+  position: relative;
+  display: flex;
+  background-color: #fffbf5;
+  height: 604px;
+  width: 1055px;
+  border-radius: 13px;
+  border: 2px solid #ff7626;
+  margin-top: 21px;
+  margin-bottom: 70px;
+  flex-direction: column;
+}
+
+.footer-line {
+  margin-left: 24px;
+  margin-right: 24px;
+}
