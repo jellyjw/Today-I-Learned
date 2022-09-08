@@ -1,0 +1,16 @@
+// 비동기 콜백함수 이해
+
+const plus = (a, b, callback) => {
+  const result = a + b;
+  callback(a + b);
+};
+
+plus(1, 2, (result) => {
+  console.log(result);
+});
+
+//addEventListener도 콜백함수 사용.
+
+window.addEventListener("click", () => {
+  console.log("click Me!");
+});
