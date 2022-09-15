@@ -1,0 +1,27 @@
+h1 {
+  color: darkgreen;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+body {
+  background-color: bisque;
+}
+
+input {
+  width: 500px;
+  height: 50px;
+  margin: 30px;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
