@@ -11,27 +11,16 @@ export default class app extends Component {
     float: "right",
   };
 
-  getStyle = () => {
+  getStyle = (completed) => {
     return {
       padding: "10px",
       borderBottom: "1px #ccc dotted",
-      textDecoration: "none",
+      textDecoration: completed ? "line-through" : "none",
     };
   };
 
   state = {
-    todoData: [
-      {
-        id: "1",
-        title: "공부하기",
-        completed: true,
-      },
-      {
-        id: "2",
-        title: "청소하기",
-        completed: false,
-      },
-    ],
+    todoData: [],
     value: "",
   };
 
@@ -54,8 +43,18 @@ export default class app extends Component {
       completed: false,
     };
 
+    handleCompleteChange = (id) => {
+      let newTodoData = this.state.todoData.map((data) => {
+        if (data.id === id) {
+          data.completed = !data.completed;
+        }
+        return data;
+      });
+      this.setState({ todoData: newTodoData });
+    };
+
     //원래 있던 할 일에 새로운 할 일 더해주기
-    this.setState({ todoData: [...this.state.todoData, newTodo] });
+    this.setState({ todoData: [...this.state.todoData, newTodo], value: "" });
   };
 
   render() {
@@ -67,8 +66,12 @@ export default class app extends Component {
           </div>
 
           {this.state.todoData.map((data) => (
-            <div style={this.getStyle()} key={data.id}>
-              <input type="checkbox" defaultChecked={false} />
+            <div style={this.getStyle(data.completed)} key={data.id}>
+              <input
+                type="checkbox"
+                defaultChecked={false}
+                onChange={() => this.handleCompleteChange(data.id)}
+              />
               {data.title}
               <button
                 style={this.btnStyle}
