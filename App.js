@@ -43,18 +43,18 @@ export default class app extends Component {
       completed: false,
     };
 
-    handleCompleteChange = (id) => {
-      let newTodoData = this.state.todoData.map((data) => {
-        if (data.id === id) {
-          data.completed = !data.completed;
-        }
-        return data;
-      });
-      this.setState({ todoData: newTodoData });
-    };
-
     //원래 있던 할 일에 새로운 할 일 더해주기
     this.setState({ todoData: [...this.state.todoData, newTodo], value: "" });
+  };
+
+  handleCompleteChange = (id) => {
+    let newTodoData = this.state.todoData.map((data) => {
+      if (data.id === id) {
+        data.completed = !data.completed;
+      }
+      return data;
+    });
+    this.setState({ todoData: newTodoData });
   };
 
   render() {
