@@ -1,112 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/script.js" defer></script>
-    <!-- defer는 문서 다 읽은다음 실행하는것 -->
-  </head>
 
-  <body>
-    <div class="container">
-      <img src="./assets/img/icon/Vector.svg" alt="" class="main-logo" />
-      <!-- 로그인 박스 안의 로그인, 비회원 탭 -->
-      <div class="login-box">
-        <div class="login-tab">
-          <div id="user-tab-btn" class="user active">
-            <span>로그인</span>
-          </div>
-          <div id="not-user-tab-btn" class="not-user">
-            <span>비회원</span>
-          </div>
-        </div>
-        <div id="login-form" class="login-form">
-          <!-- 회원 로그인 -->
-          <div id="member">
-            <div class="member-form" id="member-form-login">
-              <div class="input-form">
-                <div class="icon-box">
-                  <img class="input-icon" src="./assets/img/icon/ID_icon.png" />
-                </div>
-                <input type="text" id="input-id" placeholder="아이디" />
-              </div>
-              <div class="input-form">
-                <div class="icon-box">
-                  <img
-                    class="input-icon"
-                    src="./assets/img/icon/LOCK_icon.png"
-                  />
-                </div>
-                <input
-                  type="password"
-                  id="input-pw-login"
-                  placeholder="비밀번호"
-                />
-              </div>
-            </div>
-            <button class="login-btn">로그인</button>
-          </div>
-          <!-- 비회원 로그인 -->
-          <div id="none-member">
-            <div class="member-form">
-              <div class="input-form">
-                <div class="icon-box">
-                  <img class="input-icon" src="./assets/img/icon/ID_icon.png" />
-                </div>
-                <input type="text" id="input-id" placeholder="주문자 명" />
-              </div>
-              <div class="input-form">
-                <div class="icon-box">
-                  <img
-                    class="input-icon"
-                    src="./assets/img/icon/LOCK_icon.png"
-                  />
-                </div>
-                <input
-                  type="text"
-                  maxlength="11"
-                  id="input-phone"
-                  placeholder="휴대폰 번호"
-                />
-              </div>
-              <div class="input-form">
-                <div class="icon-box">
-                  <img
-                    class="input-icon"
-                    src="./assets/img/icon/phone_icon.png"
-                  />
-                </div>
-                <input
-                  type="password"
-                  id="input-pw"
-                  placeholder="주문 비밀번호"
-                />
-              </div>
-            </div>
-            <button class="login-btn-notuser">비회원 예약하기</button>
-          </div>
-        </div>
-      </div>
-      <!-- 아이디찾기, 비밀번호찾기, 회원가입 -->
-      <div class="login-menu">
-        <a class="find-id">아이디찾기</a>
-        <a class="find-pw">비밀번호찾기</a>
-        <a class="join">회원가입</a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum</title>
+</head>
 
-      <!-- 이용약관, 개인정보, 문의하기, copyright -->
-      <div>
-        <div class="footer-menu">
-          <a class="terms-of-service">이용약관</a>
-          <a class="privacy-policy">개인정보처리방침</a>
-          <a class="inquiry">문의하기</a>
-        </div>
-        <a class="copyright">Copyright @ FOODPING Corp. All Right Reserved.</a>
-      </div>
-    </div>
-  </body>
+<body>
+    <script src="app.js"></script>
+</body>
+
 </html>
