@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>jiwoo_cafe</title>
+  </head>
+  <body class="main">
+    <section>
+      <div class="menu">
+        <img src="./assets/logo.png" alt="logo" class="logo" />
+        <span>MENU</span>
+      </div>
+      <div id="product"></div>
+      <button type="button" id="order-add" onclick="handleOrderClick()">
+        주문 추가
+      </button>
+      <button type="button" id="order-cancel" onclick="handleCancelClick()">
+        취소하기
+      </button>
+    </section>
+    <section id="order-list-container">
+      <div>주문내역</div>
+      <div>
+        총합 :
+        <input id="total-price" value="0" />원
+        <button type="button" onclick="handleOrderCompleteClick()">
+          주문하기
+        </button>
+      </div>
+      <div id="order-list">
+        <table>
+          <thead>
+            <tr>
+              <th>메뉴</th>
+              <th>수량</th>
+              <th>가격</th>
+              <th>삭제</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
